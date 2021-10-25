@@ -23,7 +23,6 @@ def shop(request):
     return render(request, 'shop.html', context)
 
 def contact(request):
-    messages.add_message(request, messages.INFO, 'Your message is received. Will get back soon!')
 
     if request.method == 'POST':
         form = ContactForm(request.POST)
